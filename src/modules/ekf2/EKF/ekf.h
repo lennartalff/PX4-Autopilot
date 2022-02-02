@@ -653,7 +653,7 @@ private:
 
 	inline void resetHorizontalPositionTo(const Vector2f &new_horz_pos);
 
-	inline void resetVerticalPositionTo(const float &new_vert_pos);
+	inline void resetVerticalPositionTo(float new_vert_pos);
 
 	void resetHeight();
 
