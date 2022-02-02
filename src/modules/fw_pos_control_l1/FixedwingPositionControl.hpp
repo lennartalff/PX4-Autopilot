@@ -352,6 +352,8 @@ private:
 	vehicle_local_path_setpoint_s		control_auto_position(const hrt_abstime &now, const float dt, const Vector2d &curr_pos,
 			const Vector2f &ground_speed,
 			const position_setpoint_s &pos_sp_prev, const position_setpoint_s &pos_sp_curr);
+	vehicle_local_path_setpoint_s navigateWaypoints(const Vector2d &waypoint_A, const Vector2d &waypoint_B,
+			const Vector2d &vehicle_pos, const Vector2f &ground_vel, const Vector2f &wind_vel);
 	void		control_auto_loiter(const hrt_abstime &now, const float dt, const Vector2d &curr_pos,
 					    const Vector2f &ground_speed,
 					    const position_setpoint_s &pos_sp_prev, const position_setpoint_s &pos_sp_curr, const position_setpoint_s &pos_sp_next);
